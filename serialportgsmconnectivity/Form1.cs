@@ -47,6 +47,7 @@ namespace serialportgsmconnectivity
             ser.Write("AT+CMGS=" + phno+ char.ConvertFromUtf32(13));
             ser.Write("Hello sir"+ char.ConvertFromUtf32(26)+ char.ConvertFromUtf32(13));
             ser.Close();
+            richTextBox1.Text("gia message");
         }
 
         private void button2_Click(object sender, EventArgs e)
